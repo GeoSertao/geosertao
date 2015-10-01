@@ -10,7 +10,7 @@ package edu.ifpb.geosertao.geosertao.core.harvest;
  * @author Marcelo Augusto
  */
 public class AttributeNotFoundException extends Exception{
-
+ 
     public AttributeNotFoundException(String attributeName) {
         super("Attribute not found: " + attributeName);
     }
