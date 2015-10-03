@@ -3,6 +3,7 @@ package edu.ifpb.geosertao.geosertao.core.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -14,7 +15,8 @@ public class MetadataRecordUrl {
     
     @Id
     private long id;
-    private int provider;
+    @OneToOne
+    private MetadataRecord provider;
     @Column(length = 300)
     private String url;
 
@@ -26,11 +28,11 @@ public class MetadataRecordUrl {
         this.id = id;
     }
 
-    public int getProvider() {
+    public MetadataRecord getProvider() {
         return provider;
     }
 
-    public void setProvider(int provider) {
+    public void setProvider(MetadataRecord provider) {
         this.provider = provider;
     }
 

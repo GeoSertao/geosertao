@@ -6,6 +6,7 @@ import javax.persistence.Basic;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -19,7 +20,8 @@ public class ServiceTemporalReport {
 
     @Id
     private long id;
-    private int service;
+    @OneToOne
+    private Service service;
     private int frequency;
     @Temporal(TemporalType.TIMESTAMP)
     @Basic
@@ -34,11 +36,11 @@ public class ServiceTemporalReport {
         this.id = id;
     }
 
-    public int getService() {
+    public Service getService() {
         return service;
     }
 
-    public void setService(int service) {
+    public void setService(Service service) {
         this.service = service;
     }
 
