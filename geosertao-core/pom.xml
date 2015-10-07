@@ -19,6 +19,18 @@
     </properties>
     
     <dependencies>
+        
+        <!-- 
+            Esta dependencia permite uma fácil migração do banco de dados
+            caso o mesmo sofra alguma mudança, assim, todos terão sempre a
+            versão mais atual do banco
+        -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
@@ -394,6 +406,10 @@
             <artifactId>jxlayer</artifactId>
             <version>3.0.4</version>
         </dependency>
+        <!--
+        
+        Essas dependencias são realmente necessárias?
+        
         <dependency>
             <groupId>org.netbeans</groupId>
             <artifactId>wizard</artifactId>
@@ -414,6 +430,7 @@
             <artifactId>org-netbeans-api-visual</artifactId>
             <version>RELEASE73</version>
         </dependency>
+        -->
         <dependency>
             <groupId>net.java.dev.timingframework</groupId>
             <artifactId>timingframework</artifactId>
@@ -479,7 +496,12 @@
             <groupId>org.rxtx</groupId>
             <artifactId>rxtxcomm</artifactId>
             <version>2.2pre2</version>
-        </dependency>  
+        </dependency>
+        <dependency>
+            <groupId>org.ancoron.postgresql</groupId>
+            <artifactId>org.postgresql</artifactId>
+            <version>9.1.901.jdbc4.1-rc9</version>
+        </dependency>
     </dependencies>     
     
     <repositories>

@@ -1,0 +1,4 @@
+﻿ALTER TABLE servicespatialreport ADD COLUMN maxx DOUBLE PRECISION;
+ALTER TABLE servicespatialreport ADD COLUMN minx DOUBLE PRECISION;
+ALTER TABLE servicespatialreport ADD COLUMN maxy DOUBLE PRECISION;
+ALTER TABLE servicespatialreport ADD COLUMN miny DOUBLE PRECISION;
