@@ -24,15 +24,15 @@ public class CatalogService {
     private String provider;
     @Column(length = 300, unique = true)
     private String url;
-    @Column (name = "textdescription", length = 3000)
+    @Column(name = "textdescription", length = 3000)
     private String description;
-    @Column (length = 300, name = "recordbyidurl")
+    @Column(length = 300, name = "recordbyidurl")
     private String recordByIdUrl;
     @Column(name = "lastcrawling", nullable = true)
     @Temporal(TemporalType.TIMESTAMP)
     @Basic(optional = true)
-    @Convert(converter = LocalDateTimePersistenceConverter.class)    
-    private LocalDateTime lastCrawling; 
+    @Convert(converter = LocalDateTimePersistenceConverter.class)
+    private LocalDateTime lastCrawling;
 
     public long getId() {
         return id;
@@ -81,5 +81,5 @@ public class CatalogService {
     public void setLastCrawling(LocalDateTime lastCrawling) {
         this.lastCrawling = lastCrawling;
     }
-    
+
 }

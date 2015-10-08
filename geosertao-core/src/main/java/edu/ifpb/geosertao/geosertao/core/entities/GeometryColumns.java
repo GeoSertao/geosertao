@@ -13,27 +13,27 @@ import javax.persistence.Table;
  * @version 0.1
  */
 @Entity
-@Table (name = "geometry_columns")
+@Table(name = "geometry_columns")
 @IdClass(GeometryColumnsPK.class)
 public class GeometryColumns {
 
     @Id
-    @Column (length = 256, name = "f_table_catalog")
-    private String fTableCatalog; 
+    @Column(length = 256, name = "f_table_catalog")
+    private String fTableCatalog;
     @Id
-    @Column (length = 256, name = "f_table_schema")
+    @Column(length = 256, name = "f_table_schema")
     private String fTableSchema;
     @Id
-    @Column (length = 256, name = "f_table_name")
+    @Column(length = 256, name = "f_table_name")
     private String fTableName;
     @Id
-    @Column (length = 256, name = "f_geometry_column")
+    @Column(length = 256, name = "f_geometry_column")
     private String fTableColumn;
-    @Column (name = "coord_dimension", nullable = false)
+    @Column(name = "coord_dimension", nullable = false)
     private int coordDimension;
-    @Column (nullable = false)
+    @Column(nullable = false)
     private int srid;
-    @Column (length = 30, nullable = false)
+    @Column(length = 30, nullable = false)
     private String type;
 
     public String getfTableCatalog() {
@@ -91,5 +91,5 @@ public class GeometryColumns {
     public void setType(String type) {
         this.type = type;
     }
-    
+
 }

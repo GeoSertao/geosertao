@@ -11,10 +11,10 @@ import javax.persistence.OneToOne;
  */
 @Entity
 public class ConceptSimilarity {
-    
+
     @Id
     private long id;
-    private double similarity;    
+    private double similarity;
     @OneToOne
     private OntologyConcept searchConcept;
     @OneToOne
@@ -51,5 +51,5 @@ public class ConceptSimilarity {
     public void setDatabaseConcept(OntologyConcept databaseConcept) {
         this.databaseConcept = databaseConcept;
     }
-    
+
 }

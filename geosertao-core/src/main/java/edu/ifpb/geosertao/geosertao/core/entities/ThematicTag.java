@@ -1,7 +1,7 @@
 package edu.ifpb.geosertao.geosertao.core.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
@@ -15,9 +15,10 @@ import javax.persistence.ManyToOne;
 public class ThematicTag {
 
     @Id
-    @GeneratedValue
+    @Column(nullable = false)
     private long id;
-    private int featuretype;
+    @ManyToOne
+    private FeatureType featuretype;
     @ManyToOne
     private OntologyConcept concept;
 
@@ -29,11 +30,11 @@ public class ThematicTag {
         this.id = id;
     }
 
-    public int getFeaturetype() {
+    public FeatureType getFeaturetype() {
         return featuretype;
     }
 
-    public void setFeaturetype(int featuretype) {
+    public void setFeaturetype(FeatureType featuretype) {
         this.featuretype = featuretype;
     }
 

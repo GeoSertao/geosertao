@@ -1,7 +1,6 @@
 
 package edu.ifpb.geosertao.geosertao.core.harvest;
 
-import edu.ifpb.geosertao.geosertao.core.converters.XmlParser;
 import java.io.InputStream;
 import java.io.StringReader;
 import java.util.Iterator;

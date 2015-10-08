@@ -3,6 +3,7 @@ package edu.ifpb.geosertao.geosertao.core.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
@@ -10,9 +11,11 @@ import javax.persistence.Id;
  * @version 0.1
  */
 @Entity
+@Table(name = "spatial_ref_sys")
 public class SpatialRefSys {
 
     @Id
+    @Column(nullable = false)
     private int srid;
     @Column(name = "auth_name", length = 256)
     private String authName;

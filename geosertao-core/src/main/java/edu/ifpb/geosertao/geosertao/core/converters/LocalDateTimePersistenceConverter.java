@@ -10,7 +10,7 @@ import javax.persistence.Converter;
  * @author douglasgabriel
  * @version 0.1
  */
-@Converter(autoApply = false)
+@Converter
 public class LocalDateTimePersistenceConverter
         implements AttributeConverter<LocalDateTime, Timestamp> {
 
