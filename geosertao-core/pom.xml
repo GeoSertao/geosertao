@@ -25,141 +25,601 @@
             <version>2.5.2</version>
         </dependency>
         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sis.core</groupId>
+            <artifactId>sis-metadata</artifactId>
+            <version>0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sis.storage</groupId>
+            <artifactId>sis-netcdf</artifactId>
+            <version>0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sis.core</groupId>
+            <artifactId>sis-referencing</artifactId>
+            <version>0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sis.storage</groupId>
+            <artifactId>sis-storage</artifactId>
+            <version>0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sis.core</groupId>
+            <artifactId>sis-utility</artifactId>
+            <version>0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.woodstox</groupId>
+            <artifactId>stax2-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>stax</groupId>
+            <artifactId>stax-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+        
+        <dependency>
             <groupId>org.opengis</groupId>
-            <artifactId>geoapi</artifactId>
-            <version>4.0-M01</version>
+            <artifactId>geoapi-pending</artifactId>
+            <version>3.1-M04</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-analytics</artifactId>
+            <version>4.0-M1</version>
         </dependency>     
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-csw</artifactId>
-            <version>4.0-M2</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-wfs</artifactId>
-            <version>4.0-M2</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-wms</artifactId>
-            <version>4.0-M2</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-wcs</artifactId>
-            <version>4.0-M2</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-wmts</artifactId>
-            <version>4.0-M2</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-sos</artifactId>
-            <version>4.0-M2</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-client-osm</artifactId>
-            <version>4.0-M2</version>
+            <version>4.0-M1</version>
         </dependency>        
+        
         <dependency>
             <groupId>org.geotoolkit</groupId>
-            <artifactId>geotk-xml-csw</artifactId>
-            <version>4.0-M2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.geotoolkit</groupId>
-            <artifactId>geotk-coverage-netcdf</artifactId>
-            <version>4.0-M2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.geotoolkit</groupId>
-            <artifactId>geotk-coverage-dimap</artifactId>
-            <version>4.0-M2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.geotoolkit</groupId>
-            <artifactId>geotk-coverage-geotiff</artifactId>
-            <version>4.0-M2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.geotoolkit</groupId>
-            <artifactId>geotk-coverage-imagery</artifactId>
-            <version>4.0-M2</version>
+            <artifactId>geotk-coverage</artifactId>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-coverage-sql</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-coverageio-dimap</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-coverageio-geotiff</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-coverageio-imagery</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-coverageio-postgresql</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-coverageio-store</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-coverageio-wkb</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-coverageio-sql</artifactId>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-coverageio</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-coverageio-netcdf</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-cvs</artifactId>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-db-core</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-db-postgres</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-dbf</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-display</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-engine-core</artifactId>
+            <version>4.0-M1</version>
+        </dependency>      
+        
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-epsg</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-epsg-javadb</artifactId>
-            <version>4.0-M0</version>
-        </dependency>    
+            <version>4.0-M1</version>
+        </dependency> 
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-epsg-javadb</artifactId>
+            <version>4.0-M1</version>
+        </dependency>   
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-feature</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-featurestore-core</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-filter</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-cql</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-geometry</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-go2</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-go2-chart-extension</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-go2-style-extension</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-gpx</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-index</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-index-tree</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-jasperreport</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-jasp-core</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-jasp-gml</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-jtswrapper</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-om</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-openoffice</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-osm-core</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-osm-xml</artifactId>
+            <version>4.0-M1</version>
+        </dependency>       
+        
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-metadata</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-metadata-fra</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-metadata-sql</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-nature</artifactId>
             <version>4.0-M0</version>
         </dependency>
+        
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-processing-core</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-processing-coverage</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-processing-jts-geometry</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-processing-math</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-processing-referencing</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-processing-vector</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-referencing</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-referencing3D</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-render</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-sensorML</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-setup</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-shapefile</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-spatial-lucente</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-style</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-svg</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-temporal</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-utility</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-utility-jdbc</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-utility-pending</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-widgets-swing</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-widgets-swing-pending</artifactId>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-wizards-swing</artifactId>
-            <version>4.0-M0</version>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
-            <artifactId>geotk-xml-base</artifactId>
-            <version>4.0-M0</version>
+            <artifactId>geotk-xml-citygml</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-csw</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-ebrin</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-feature-catalogue</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-gml</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-kml</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-mathml</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-ogc</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-om</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-owc</artifactId>
+            <version>4.0-M1</version>
         </dependency>
         <dependency>
             <groupId>org.geotoolkit</groupId>
             <artifactId>geotk-xml-ows</artifactId>
-            <version>4.0-M2</version>
-        </dependency>        
-        
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-se</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-sensorML</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-service</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-skos</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-sld</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-sos</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-swe</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-wcs</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-wfs</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-wmc</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-wms</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-wmts</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-wps</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-xacml</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.geotoolkit</groupId>
+            <artifactId>geotk-xml-xsd</artifactId>
+            <version>4.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-stax-api_1.0_spec</artifactId>
+            <version>1.0</version>
+        </dependency>
+                               
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>    
+        
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>1.3.04</version>
+        </dependency>
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis-ext</artifactId>
+            <version>1.3.04</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>xmlgraphics-commons</artifactId>
+            <version>1.2</version>
+        </dependency>
+
         
         <!-- Imaging -->
         <dependency>

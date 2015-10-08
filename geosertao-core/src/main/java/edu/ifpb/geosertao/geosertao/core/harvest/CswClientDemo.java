@@ -19,8 +19,7 @@ import org.geotoolkit.csw.xml.GetRecordByIdResponse;
 import org.geotoolkit.csw.xml.ResultType;
 import org.geotoolkit.csw.xml.v202.Capabilities;
 import org.geotoolkit.csw.xml.v202.GetRecordsResponseType;
-
-import org.geotoolkit.xml.MarshallerPool;
+import org.apache.sis.xml.MarshallerPool;
 import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.opengis.metadata.Metadata;

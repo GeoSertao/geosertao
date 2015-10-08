@@ -51,6 +51,7 @@ public class ServiceCrawler {
                     crawl(url.getUrl());
                 } catch (ServiceAccessException e) {
                 }
+                
             }
 
         }
